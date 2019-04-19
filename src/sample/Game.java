@@ -67,6 +67,7 @@ public class Game
 
     public void update()
     {
+        fillCells();
         for(int a=0;a<cells[0].length;a++)
         {
             for(int b=0;a<cells.length;b++)
