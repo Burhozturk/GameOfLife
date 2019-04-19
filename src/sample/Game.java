@@ -8,6 +8,7 @@ import java.util.TimerTask;
 
 public class Game
 {
+    //Celler to dimensional array
     public int cells[][]=;
     Cell newCell=new Cell();
     Timeline timeline=new Timeline();
