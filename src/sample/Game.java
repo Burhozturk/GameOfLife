@@ -14,7 +14,13 @@ public class Game
     int countDown=10000;
     Random rand = new Random();
     int n = rand.nextInt(1);
-
+    WorksThreads p=new WorksThreads("Opgave1",1000);
+    WorksThreads a=new WorksThreads("Opgave2",1000);
+    public Game()
+    {
+        t.start();
+        q.start();
+    }
 
     public void fillCells()
     {
@@ -48,6 +54,7 @@ public class Game
 
 
 
+
             }
 
         }
@@ -71,4 +78,8 @@ public class Game
         }
 
     }
+
+    Thread t=new Thread(p);
+    Thread q=new Thread(a);
+
 }
