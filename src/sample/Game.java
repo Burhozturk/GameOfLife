@@ -9,7 +9,7 @@ import java.util.TimerTask;
 public class Game
 {
     //Celler to dimensional array
-    public int cells[][]=;
+    public int cells[][];
     Cell newCell=new Cell();
     Timeline timeline=new Timeline();
     int countDown=10000;
@@ -63,6 +63,7 @@ public class Game
 
 
     }
+
 
 
     public void update()
