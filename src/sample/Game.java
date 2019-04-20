@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.animation.Timeline;
+import javafx.scene.shape.Circle;
 
 import java.util.Random;
 import java.util.Timer;
@@ -54,7 +55,12 @@ public class Game
             {
 
 
+                Circle newCircle=new Circle();
+                newCircle.setCenterY(10.0);
+                newCircle.setCenterX(10.0);
 
+                newCircle.fillProperty();
+                newCircle.setRadius(10.0);
 
             }
 
