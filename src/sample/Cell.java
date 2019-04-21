@@ -1,9 +1,15 @@
 package sample;
 
+import java.awt.*;
+
 public class Cell
 {
     private int livingNeighbours;
     private boolean alive;
+
+    public static final int SIZE=10;
+    private int x;
+    private int y;
 
     public void update()
     {
@@ -40,6 +46,26 @@ public class Cell
     public void setAlive(boolean alive)
     {
         this.alive = alive;
+    }
+
+    public Cell(int x,int y,boolean alive)
+    {
+        this.x=x;
+        this.y=y;
+        this.alive=alive;
+    }
+
+    public Cell()
+    {
+
+    }
+
+    public void draw(Graphics g)
+    {
+        if(alive)
+        {
+            g.fillRect(x*SIZE,y*SIZE,SIZE,SIZE);
+        }
     }
 
 

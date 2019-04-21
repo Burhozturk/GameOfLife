@@ -1,8 +1,10 @@
 package sample;
 
 import javafx.animation.Timeline;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 
+import java.awt.*;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -49,24 +51,12 @@ public class Game
 
     public void draw()
     {
-        for(int a=0;a<cells[0].length;a++)
-        {
-            for(int b=0;a<cells.length;b++)
-            {
-
-
-                Circle newCircle=new Circle();
-                newCircle.setCenterY(10.0);
-                newCircle.setCenterX(10.0);
-
-                newCircle.fillProperty();
-                newCircle.setRadius(10.0);
-
-            }
-
-        }
-
-
+        Circle newCircle=new Circle();
+        newCircle.setCenterY(10.0);
+        newCircle.setCenterX(10.0);
+        //Pane paneone=new Pane();
+        newCircle.fillProperty();
+        wnewCircle.setRadius(10.0);
 
     }
 
@@ -80,6 +70,16 @@ public class Game
             for(int b=0;a<cells.length;b++)
             {
                 newCell.setLivingNeighbours(n);
+
+
+            }
+
+        }
+        for(int x=0;x<cells[0].length;x++)
+        {
+            for(int d=0;d<cells.length;d++)
+            {
+                
                 newCell.update();
 
             }

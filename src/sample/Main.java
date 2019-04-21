@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 public class Main extends Application {
 
     @Override
@@ -15,7 +17,10 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
         Game newGame=new Game();
-        //newGame.draw();
+        Cell newCell=new Cell();
+        newGame.draw();
+
+
 
     }
 
